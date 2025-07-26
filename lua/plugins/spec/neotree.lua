@@ -13,8 +13,6 @@ return {
     { "<C-l>", function() vim.cmd("wincmd l") end, desc = "Focus right window" },
   },
   opts = {
-    -- Neo-tree의 옵션을 여기에 설정할 수 있습니다.
-    -- 예: window = { width = 30 },
     window = {
       mappings = {
         ["<C-x>"] = "close_window",
@@ -24,6 +22,11 @@ return {
       filtered_items = {
         hide_dotfiles = false,    -- dot file을 볼 수 있게 한다.
       },
+    },
+    -- git status 렌더링을 담당하는 component의 설정을 filesystem 안에 넣을 경우,
+    -- 아이콘을 아래와 같이 직접 지정해도 nvim-web-devions에서 가져와 표시한다.
+    -- 따라서 filesystem에서 git_status를 최상위 레벨로 이동해야 한다.
+    default_component_configs = {
       git_status = {
         symbols = {
           added     = "A",
@@ -35,17 +38,6 @@ return {
           unstaged  = "U",
           staged    = "S",
           conflict  = "C",
--- 아래 심벌을 위 문자로 대체했는데도 심벌로 나온다. 
--- nvim-web-devicons 때문이라는데, 이것을 비활성화 하면 탐색기 아이콘도 다 사라진다.          
---          added     = "✚",
---          modified  = "",
---          deleted   = "✖" ,
---          renamed   = "",
---          untracked = "",
---          ignored   = "",
---          unstaged  = "",
---          staged    = "",
---          conflict  = "",
         }
       }
     }
