@@ -37,7 +37,8 @@
 | **lazy.nvim** | 플러그인 매니저 |
 | **catppuccin** | 세련된 다크/라이트 컬러 스킴 |
 | **telescope.nvim** | 파일, 텍스트 검색을 위한 퍼지 파인더 |
-| **neo-tree.nvim** | 파일 탐색기 트리 |
+| **neo-tree.nvim** | 파일 탐색기 트리 (Git 상태 아이콘 포함) |
+| | `✚` Added, `` Modified, `✖` Deleted, `` Renamed, `` Untracked, `` Ignored, `` Unstaged, `` Staged, `` Conflict |
 | **nvim-treesitter** | 빠르고 정확한 구문 분석 및 하이라이팅 |
 | **hop.nvim** | "Easy Motion" 스타일의 빠른 커서 이동 |
 | **vim-surround** | 쌍, 따옴표, 태그 등 주변을 감싸는 요소를 쉽게 관리 |

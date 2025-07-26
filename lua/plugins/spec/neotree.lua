@@ -18,6 +18,19 @@ return {
     filesystem = {
       filtered_items = {
         hide_dotfiles = false,    -- dot file을 볼 수 있게 한다.
+      },
+      git_status = {
+        symbols = {
+          added     = "✚",
+          modified  = "",
+          deleted   = "✖",
+          renamed   = "",
+          untracked = "",
+          ignored   = "",
+          unstaged  = "",
+          staged    = "",
+          conflict  = "",
+        }
       }
     }
   },
