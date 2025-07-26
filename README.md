@@ -56,6 +56,8 @@
 | Normal | `<C-n>` | 파일 탐색기 열기/닫기 | Neo-tree |
 | Normal | `<leader>s` | 현재 보이는 화면에서 한 글자로 점프 | Hop |
 | Normal | `<leader>S` | 현재 보이는 화면에서 두 글자로 점프 | Hop |
+| Normal | `<C-h/j/k/l>` | 창 간 이동 | Core |
+| Normal | `<leader>h` | 검색 하이라이트 지우기 | Core |
 
 ---
 ## ⚙️ 핵심 설정 (options.lua)
