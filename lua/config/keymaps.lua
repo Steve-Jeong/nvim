@@ -26,3 +26,6 @@ keymap.set('n', '<leader>h', ':nohlsearch<CR>', { desc = '검색 하이라이트
 
 -- quit shortcut
 keymap.set('n', '<C-x>', ':q<cr>')
+
+-- visual block mode 실행
+vim.keymap.set('n', '<leader>v', '<C-v>', { desc = 'Visual Block Mode' })

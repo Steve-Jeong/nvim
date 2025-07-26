@@ -62,6 +62,7 @@
 | 모드 | 키 | 기능 | 관련 플러그인/기능 |
 |---|---|---|---|
 | Insert, Visual | `jk` | Normal 모드로 전환 | Core |
+| Normal | `<leader>v`  | Visual Block 모드 시작 | Core |
 | Normal | `<C-p>` | 파일 이름으로 찾기 | Telescope |
 | Normal | `<leader>ff` | 파일 이름으로 찾기 | Telescope |
 | Normal | `<leader>fg` | 파일 내용으로 찾기 (Live Grep) | Telescope |
