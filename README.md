@@ -53,9 +53,13 @@
 
 | 모드 | 키 | 기능 | 관련 플러그인/기능 |
 |---|---|---|---|
-| Insert | `jk` | Normal 모드로 전환 | Core |
+| Insert, Visual | `jk` | Normal 모드로 전환 | Core |
 | Normal | `<C-p>` | 파일 이름으로 찾기 | Telescope |
+| Normal | `<leader>ff` | 파일 이름으로 찾기 | Telescope |
 | Normal | `<leader>fg` | 파일 내용으로 찾기 (Live Grep) | Telescope |
+| Normal | `<leader>fr` | 최근 파일 목록 | Telescope |
+| Normal | `<leader>fb` | 현재 Neovim세션의 열려있는 모든 버퍼(파일) 목록 | Telescope |
+| Normal | `<leader>fh` | Neovim 내장 도움말 검색 | Telescope |
 | Normal | `<C-n>` | 파일 탐색기 열기/닫기 | Neo-tree |
 | Normal | `<leader>s` | 현재 보이는 화면에서 한 글자로 점프 | Hop |
 | Normal | `<leader>S` | 현재 보이는 화면에서 두 글자로 점프 | Hop |
