@@ -69,7 +69,7 @@
 | Normal | `<leader>fr` | 최근 파일 목록 | Telescope |
 | Normal | `<leader>fb` | 현재 Neovim세션의 열려있는 모든 버퍼(파일) 목록 | Telescope |
 | Normal | `<leader>fh` | Neovim 내장 도움말 검색 | Telescope |
-| Normal | `<C-n>` | 파일 탐색기 열기/닫기 | Neo-tree |
+| Normal | `<leader>n` | 파일 탐색기 열기/닫기 | Neo-tree |
 | Normal | `<leader>s` | 현재 보이는 화면에서 한 글자로 점프 | Hop |
 | Normal | `<leader>S` | 현재 보이는 화면에서 두 글자로 점프 | Hop |
 | Normal | `<C-h/j/k/l>` | 창 간 이동 | Core |
@@ -84,7 +84,7 @@
 
 * **들여쓰기**: 탭을 공백 2칸으로 설정 (`expandtab`, `tabstop=2`, `shiftwidth=2`)
 * **UI**: 줄 번호(`number`, `relativenumber`), 현재 줄 표시(`cursorline`) 활성화
-* **키맵 딜레이**: `<leader>` 키 조합의 입력 대기 시간을 500ms로 설정 (`timeoutlen=500`)
+* **키맵 딜레이**: `<leader>` 키 조합의 입력 대기 시간을 700ms로 설정 (`timeoutlen=700`)
 * **자동 저장**: 파일 저장 시 존재하지 않는 디렉터리를 자동으로 생성
 
 ---

@@ -33,5 +33,5 @@ opt.cmdheight = 1
 vim.o.guicursor = 'n-v-c:block,i:ver25-blinkwait700-blinkon400-blinkoff250-Cursor/lCursor,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175'
 
 -- 키맵 입력 대기 시간 설정 (기본값 1000ms)
-opt.timeoutlen = 500     -- 500ms (0.5초)로 줄임
+opt.timeoutlen = 700     -- 700ms (0.7초)로 줄임
 
