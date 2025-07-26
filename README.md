@@ -30,6 +30,7 @@
             ├── hop.lua
             ├── indent_blankline.lua
             ├── lualine.lua
+            ├── lsp.lua(mason.nvim)
             ├── neotree.lua
             ├── surround.lua
             ├── telescope.lua
@@ -41,6 +42,7 @@
 | 플러그인 | 설명 |
 |---|---|
 | **lazy.nvim** | 플러그인 매니저 |
+| **mason.nvim** | LSP 서버, 포맷터, 린터 등을 쉽게 관리 |
 | **catppuccin** | 세련된 다크/라이트 컬러 스킴 |
 | **lualine.nvim** | Neovim 하단의 상태 표시줄 |
 | **telescope.nvim** | 파일, 텍스트 검색을 위한 퍼지 파인더 |
