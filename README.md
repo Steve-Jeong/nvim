@@ -26,7 +26,10 @@
         ├── init.lua
         └── spec/
             ├── colorscheme.lua
+            ├── comment.lua
             ├── hop.lua
+            ├── indent_blankline.lua
+            ├── lualine.lua
             ├── neotree.lua
             ├── surround.lua
             ├── telescope.lua
@@ -39,12 +42,15 @@
 |---|---|
 | **lazy.nvim** | 플러그인 매니저 |
 | **catppuccin** | 세련된 다크/라이트 컬러 스킴 |
+| **lualine.nvim** | Neovim 하단의 상태 표시줄 |
 | **telescope.nvim** | 파일, 텍스트 검색을 위한 퍼지 파인더 |
 | **neo-tree.nvim** | 파일 탐색기 트리 (Git 상태 아이콘 포함) |
 | | `A` Added, `M` Modified, `D` Deleted, `R` Renamed, `?` Untracked, `I` Ignored, `U` Unstaged, `S` Staged, `C` Conflict |
 | **nvim-treesitter** | 빠르고 정확한 구문 분석 및 하이라이팅 |
 | **hop.nvim** | "Easy Motion" 스타일의 빠른 커서 이동 |
 | **vim-surround** | 쌍, 따옴표, 태그 등 주변을 감싸는 요소를 쉽게 관리 |
+| **Comment.nvim** | `gcc` (주석 토글), `gc` (선택 영역 주석) 등 편리한 주석 기능 |
+| **indent-blankline.nvim** | 들여쓰기 레벨을 시각적으로 표시 |
 
 ---
 ## ⌨️ 주요 키맵
