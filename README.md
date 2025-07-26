@@ -74,6 +74,9 @@
 | Normal | `<C-h/j/k/l>` | 창 간 이동 | Core |
 | Normal | `<leader>h` | 검색 하이라이트 지우기 | Core |
 | Normal | `<C-x>` | 현재 창 닫기 (파일, Neo-tree 등) | Core / Neo-tree |
+| Normal | `K` | Context 정보를 보여줌 | Mason |
+| Normal | `gd` | Definition 파일로 이동 | Mason |
+| Normal | `<leader>ca` | 오류시 누르면 code action을 보여줌 | Mason |
 
 ---
 ## ⚙️ 핵심 설정 (options.lua)
