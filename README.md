@@ -40,6 +40,7 @@
 | **neo-tree.nvim** | 파일 탐색기 트리 |
 | **nvim-treesitter** | 빠르고 정확한 구문 분석 및 하이라이팅 |
 | **hop.nvim** | "Easy Motion" 스타일의 빠른 커서 이동 |
+| **vim-surround** | 쌍, 따옴표, 태그 등 주변을 감싸는 요소를 쉽게 관리 |
 
 ---
 ## ⌨️ 주요 키맵
