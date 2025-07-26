@@ -9,6 +9,8 @@ return {
   lazy = false,  -- neo-tree will lazily load itselt
   keys = {
     { "<C-n>", function() vim.cmd("Neotree toggle") end, desc = "Toggle Neo-tree" },
+    { "<C-h>", function() vim.cmd("wincmd h") end, desc = "Focus left window" },
+    { "<C-l>", function() vim.cmd("wincmd l") end, desc = "Focus right window" },
   },
   opts = {
     -- Neo-tree의 옵션을 여기에 설정할 수 있습니다.
