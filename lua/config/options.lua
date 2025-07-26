@@ -7,6 +7,7 @@ opt.expandtab = true     -- 탭을 공백으로 변환
 opt.tabstop = 2          -- 탭 너비
 opt.softtabstop = 2      -- 편집 시 탭 너비
 opt.shiftwidth = 2       -- 자동 들여쓰기 너비
+opt.smartindent = true
 
 -- UI 관련
 opt.number = true        -- 줄 번호 표시
@@ -25,6 +26,11 @@ opt.scrolloff = 8        -- 커서 위/아래로 최소 8줄 유지
 opt.sidescrolloff = 8    -- 커서 좌/우로 최소 8줄 유지
 opt.mouse = "a"          -- 모든 모드에서 마우스 사용
 opt.breakindent = true   -- 줄바꿈 시 들여쓰기 유지
+opt.encoding = "UTF-8"
+opt.cmdheight = 1
+
+-- cursor setting
+vim.o.guicursor = 'n-v-c:block,i:ver25-blinkwait700-blinkon400-blinkoff250-Cursor/lCursor,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175'
 
 -- 키맵 입력 대기 시간 설정 (기본값 1000ms)
 opt.timeoutlen = 500     -- 500ms (0.5초)로 줄임
