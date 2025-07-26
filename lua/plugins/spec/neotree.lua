@@ -15,5 +15,10 @@ return {
   opts = {
     -- Neo-tree의 옵션을 여기에 설정할 수 있습니다.
     -- 예: window = { width = 30 },
+    filesystem = {
+      filtered_items = {
+        hide_dotfiles = false,    -- dot file을 볼 수 있게 한다.
+      }
+    }
   },
 }
