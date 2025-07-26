@@ -22,3 +22,6 @@ keymap.set('n', '<C-Right>', '<C-w>l', { desc = "오른쪽 창으로 이동" })
 
 -- clear search highlight
 keymap.set('n', '<leader>h', ':nohlsearch<CR>', { desc = '검색 하이라이트 지우기' })
+
+-- quit shortcut
+keymap.set('n', '<C-x>', ':q<cr>')

@@ -10,6 +10,7 @@ end
 require("config.options")
 require("config.keymaps")
 require("config.autocmds")
+require("config.line_numbering")
 
 -- 플러그인 매니저(lazy.nvim) 설정 불러오기
 require("plugins")

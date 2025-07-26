@@ -8,6 +8,7 @@
 * **모듈화된 구조**: 기능별(옵션, 키맵, 플러그인)로 분리된 깔끔한 설정
 * **Lua 기반**: Vimscript를 최소화한 완전한 Lua 설정
 * **주요 기능**: 향상된 구문 분석, 퍼지 파인더, 파일 탐색기, 빠른 커서 이동 등 필수 개발 기능 포함
+* **개선된 라인 넘버링**: 일반 모드에서는 상대 번호, 입력 모드에서는 절대 번호를 표시하여 가독성 향상
 
 ---
 ## 📂 파일 구조
@@ -19,6 +20,7 @@
     ├── config/      -- 핵심 설정
     │   ├── autocmds.lua
     │   ├── keymaps.lua
+    │   ├── line_numbering.lua
     │   └── options.lua
     └── plugins/       -- 플러그인 관련 설정 (Lazy.nvim)
         ├── init.lua
@@ -26,6 +28,7 @@
             ├── colorscheme.lua
             ├── hop.lua
             ├── neotree.lua
+            ├── surround.lua
             ├── telescope.lua
             └── treesitter.lua
 ```
@@ -58,6 +61,7 @@
 | Normal | `<leader>S` | 현재 보이는 화면에서 두 글자로 점프 | Hop |
 | Normal | `<C-h/j/k/l>` | 창 간 이동 | Core |
 | Normal | `<leader>h` | 검색 하이라이트 지우기 | Core |
+| Normal | `<C-x>` | 현재 창 닫기 (파일, Neo-tree 등) | Core / Neo-tree |
 
 ---
 ## ⚙️ 핵심 설정 (options.lua)
@@ -95,4 +99,3 @@ nvim
 ```
 
 설치가 완료된 후 Neovim을 다시 시작하면 모든 설정이 적용됩니다.
-
