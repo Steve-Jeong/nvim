@@ -1,0 +1,94 @@
+# 나의 Neovim 설정 (My Neovim Configuration)
+
+이 저장소는 Lua 기반의 현대적이고 모듈화된 Neovim 설정을 담고 있습니다. 플러그인 관리는 `lazy.nvim`을 사용하며, 가독성과 유지보수성을 최우선으로 고려하여 구성되었습니다.
+
+## ✨ 주요 특징
+
+* **빠른 속도**: `lazy.nvim`을 사용한 플러그인 지연 로딩
+* **모듈화된 구조**: 기능별(옵션, 키맵, 플러그인)로 분리된 깔끔한 설정
+* **Lua 기반**: Vimscript를 최소화한 완전한 Lua 설정
+* **주요 기능**: 향상된 구문 분석, 퍼지 파인더, 파일 탐색기, 빠른 커서 이동 등 필수 개발 기능 포함
+
+---
+## 📂 파일 구조
+
+```bash
+~/.config/nvim/
+├── init.lua         -- 메인 진입점
+└── lua/
+    ├── config/      -- 핵심 설정
+    │   ├── autocmds.lua
+    │   ├── keymaps.lua
+    │   └── options.lua
+    └── plugins/       -- 플러그인 관련 설정 (Lazy.nvim)
+        ├── init.lua
+        └── spec/
+            ├── colorscheme.lua
+            ├── hop.lua
+            ├── neotree.lua
+            ├── telescope.lua
+            └── treesitter.lua
+```
+
+## 📦 설치된 플러그인
+
+| 플러그인 | 설명 |
+|---|---|
+| **lazy.nvim** | 플러그인 매니저 |
+| **catppuccin** | 세련된 다크/라이트 컬러 스킴 |
+| **telescope.nvim** | 파일, 텍스트 검색을 위한 퍼지 파인더 |
+| **neo-tree.nvim** | 파일 탐색기 트리 |
+| **nvim-treesitter** | 빠르고 정확한 구문 분석 및 하이라이팅 |
+| **hop.nvim** | "Easy Motion" 스타일의 빠른 커서 이동 |
+
+---
+## ⌨️ 주요 키맵
+
+**leader** 키는 `Space` 키로 설정되어 있습니다.
+
+| 모드 | 키 | 기능 | 관련 플러그인/기능 |
+|---|---|---|---|
+| Insert | `jk` | Normal 모드로 전환 | Core |
+| Normal | `<C-p>` | 파일 이름으로 찾기 | Telescope |
+| Normal | `<leader>fg` | 파일 내용으로 찾기 (Live Grep) | Telescope |
+| Normal | `<C-n>` | 파일 탐색기 열기/닫기 | Neo-tree |
+| Normal | `<leader>s` | 현재 보이는 화면에서 한 글자로 점프 | Hop |
+| Normal | `<leader>S` | 현재 보이는 화면에서 두 글자로 점프 | Hop |
+
+---
+## ⚙️ 핵심 설정 (options.lua)
+
+* **들여쓰기**: 탭을 공백 2칸으로 설정 (`expandtab`, `tabstop=2`, `shiftwidth=2`)
+* **UI**: 줄 번호(`number`, `relativenumber`), 현재 줄 표시(`cursorline`) 활성화
+* **키맵 딜레이**: `<leader>` 키 조합의 입력 대기 시간을 500ms로 설정 (`timeoutlen=500`)
+* **자동 저장**: 파일 저장 시 존재하지 않는 디렉터리를 자동으로 생성
+
+---
+## 🚀 설치 방법
+
+### 사전 요구사항:
+
+* Neovim (v0.8.0 이상)
+* Git
+* Nerd Font (아이콘 표시를 위해 필요)
+
+### 기존 설정 백업 (선택 사항):
+
+```bash
+mv ~/.config/nvim ~/.config/nvim.bak
+```
+
+### 저장소 복제:
+```bash
+git clone <YOUR_REPOSITORY_URL> ~/.config/nvim
+```
+
+### Neovim 실행:
+Neovim을 실행하면 lazy.nvim이 자동으로 플러그인들을 설치합니다.
+
+```bash
+nvim
+```
+
+설치가 완료된 후 Neovim을 다시 시작하면 모든 설정이 적용됩니다.
+
