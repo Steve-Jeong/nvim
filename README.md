@@ -78,6 +78,7 @@
 | Normal | `K` | Context 정보를 보여줌 | Mason |
 | Normal | `gd` | Definition 파일로 이동 | Mason |
 | Normal | `<leader>ca` | 오류시 누르면 code action을 보여줌 | Mason |
+| Normal | `<leader>i` | 들여쓰기 라인 토글 | indent-blankline.nvim |
 
 ---
 ## ⚙️ 핵심 설정 (options.lua)

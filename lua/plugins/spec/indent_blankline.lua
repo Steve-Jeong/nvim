@@ -2,6 +2,13 @@ return {
   "lukas-reineke/indent-blankline.nvim",
   main = "ibl",
   opts = {},
+  keys = {
+    {
+      "<Leader>i",
+      "<cmd>IBLToggle<cr>",
+      desc = "Indent lines toggle"
+    },
+  },
   config = function()
     local highlight = {
       "RainbowRed",
@@ -27,7 +34,10 @@ return {
         vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#56B6C2" })
     end)
 
-    require("ibl").setup { indent = { highlight = highlight } }
+    require("ibl").setup {
+      indent = { highlight = highlight },
+      scope = { exclude = { language = { "lua" } } }
+    }
 
   end
 }
